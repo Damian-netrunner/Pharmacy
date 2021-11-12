@@ -1,294 +1,313 @@
  <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="Иван Котов" />
-        <title>ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ В ФАРМАЦИИ</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-        <!-- Third party plugin CSS-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet"/>
+ <html lang="ru">
 
-        <link rel="stylesheet" type="text/css"  href="/css/plyr.css" />
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta name="description" content="" />
+   <meta name="author" content="Иван Котов" />
+   <title>ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ В ФАРМАЦИИ</title>
+   <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+   <!-- Font Awesome icons (free version)-->
+   <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+   <!-- Google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic"
+     rel="stylesheet" type="text/css" />
+   <!-- Third party plugin CSS-->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+     rel="stylesheet" />
+   <!-- Core theme CSS (includes Bootstrap)-->
+   <link href="css/styles.css" rel="stylesheet" />
 
-        <script src="/js/public/vue.js"></script>
-        <script src="/js/public/vue-resource.js"></script>
-        <script src="/js/public/jquery-3.2.1.slim.min.js"></script>
-        <script src="/js/public/popper.min.js"></script>
-        <script src="/js/public/bootstrap.min.js"></script>
-        <script src="/js/public/axios.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="/css/plyr.css" />
 
-        <script src="/js/public/polyfill.min.js"></script>
-        <script src="/js/public/bootstrap-vue.min.js"></script>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+   <script src="/js/public/vue.js"></script>
+   <script src="/js/public/vue-resource.js"></script>
+   <script src="/js/public/jquery-3.2.1.slim.min.js"></script>
+   <script src="/js/public/popper.min.js"></script>
+   <script src="/js/public/bootstrap.min.js"></script>
+   <script src="/js/public/axios.min.js"></script>
 
+   <script src="/js/public/polyfill.min.js"></script>
+   <script src="/js/public/bootstrap-vue.min.js"></script>
+   <!-- Bootstrap core JS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Third party plugin JS-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+   <!-- Core theme JS-->
+   <script src="js/scripts.js"></script>
+ </head>
 
-        <body id="page-top">  
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top py-3" id="mainNav">  
-            <div class="container">  
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"  
-            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"  
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>  
-            <div class="collapse navbar-collapse" id="navbarResponsive">  
-            <ul class="navbar-nav ml-auto my-2 my-lg-0 ">  
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Главная</a></li>  
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#authors">Организаторы</a></li>  
-            <li v-if="nav.firstname==null" class="nav-item"><a class="nav-link js-scroll-trigger" href="#reports">Доклады</a></li>   
-            </ul>  
-            </div>  
-            </div>  
-            </nav>  
-       
-            
-       
-            <!-- Masthead-->  
-            <header class="masthead">  
-            <div class="container h-100">  
-            <div class="row h-100 align-items-center justify-content-center text-center">  
-            <div class="col-lg-10 align-self-end">  
-            <h2 class="text-white font-weight-bold">Всероссийская научно-практическая конференция
-                с международным участием</h2>   
-            <h1 class="text-uppercase text-white font-weight-bold">«ИННОВАЦИОННЫЕ
-                ТЕХНОЛОГИИ В ФАРМАЦИИ»,</h1>  
-           
-            <h2 class="text-white font-weight-bold">посвященная 80-летию образования фармацевтического
-                факультета ИГМУ</h2>  
-            <hr class="divider my-4"/>
-            </div>  
-            <div class="col-lg-8 align-self-baseline">  
-            <p class="text-white-75 font-weight-light mb-5">10 июня 2021 г.</p>  
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#authors">Организаторы</a>  
-            </div>  
-            </div>  
-            </div>  
-            </header>  
-            <!-- About-->  
-            <section class="page-section bg-primary" id="authors">  
-            <div class="container">  
-            <div class="row justify-content-center">  
-            <div class="col-lg-8 text-center">  
-            <h2 class="text-white mt-0"></h2>  
-            <h2 class="text-white mt-0">Федеральное государственное бюджетное образовательное учреждение высшего образования «Иркутский государственный медицинский университет» Министерства здравоохранения Российской Федерации</h2>  
-            <hr class="divider light my-4"/>  
-            <a class="btn btn-light btn-xl js-scroll-trigger" href="#reports">Доклады</a>  
-            </div>  
-            </div>  
-            </div>  
-            </section>  
-       
-            <!-- Services-->  
-            <section class="page-section" id="reports">  
-              <div class="container">  
-                <h2 class="text-center mt-0">Программа Всероссийской научно-практической онлайн-конференции с международным участием</h2>  
-                <h3 class="text-center mb-2">10 июня 2021 г.</h3>  
-                <hr class="divider my-4"/>  
-                <div class="row justify-content-center">  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                        <i class="fa-4x fas fa-flask text-primary mb-4"></i>  
-                        <h5 class="h4 mb-2">Роль Иркутского государственного медицинского университета в подготовке национальных кадров для здравоохранения Монголии и перспективы.</h5>  
-                        <p class="mb-2 text-muted"><b>Быков Юрий Николаевич </b>- проректор, заведующий кафедрой нервных болезней ФГБОУ ВО ИГМУ (Иркутск)</p>  
-                        <a href="https://youtu.be/wTwP0Yts8Vo" target="_blank" class="btn btn-primary">Смотреть</a>
-                      </div> 
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                        <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                        <h5 class="h4 mb-2">Оценка физико-химических показателей ротовой жидкости пациентов, переболевших COVID-19.</h5>  
-                        <p class="mb-2 text-muted"><b>Быков Юрий Николаевич </b>- проректор, заведующий кафедрой нервных болезней ФГБОУ ВО ИГМУ (Иркутск)</p>  
-                        <a href="https://youtu.be/wTwP0Yts8Vo" target="_blank" class="btn btn-primary">Смотреть</a>
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                     <div class="mt-5">  
-                        <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                        <h5 class="h4 mb-2">Об особенностях формирования реестра ветеринарных лекарственных препаратов в Российской федерации.</h5>  
-                        <p class="mb-2 text-muted"><b>Быков Юрий Николаевич </b>- проректор, заведующий кафедрой нервных болезней ФГБОУ ВО ИГМУ (Иркутск)</p>  
-                        <a href="https://youtu.be/i-U_Upt9kK4" target="_blank" class="btn btn-primary">Смотреть</a>
-                      </div> 
-                  </div>  
-                </div>  
-                <div class="row justify-content-center">  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                        <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                        <h5 class="h4 mb-2">Оценка физико-химических показателей ротовой жидкости пациентов, переболевших COVID-19.</h5>  
-                        <p class="mb-2 text-muted"><b>Быков Юрий Николаевич </b>- проректор, заведующий кафедрой нервных болезней ФГБОУ ВО ИГМУ (Иркутск)</p>  
-                        <a href="https://youtu.be/wTwP0Yts8Vo" target="_blank" class="btn btn-primary">Смотреть</a>
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Определение потенциала фармацевтической помощи населению Новосибирской области.</h5>  
-                      <p class="mb-2 text-muted"><b>Капустенская Жанна Исмагиловна </b>- доцент кафедры неврологии и нейрохирургии ИГМАПО – филиала ФГБОУ ДПО РМАНПО Минздрава России, к.м.н. (Иркутск)</p>  
-                      <a href="https://youtu.be/BvQhB0tEy80" target="_blank" class="btn btn-primary">Смотреть</a>
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Определение анатомо-диагностических признаков листьев THEA CHINENSIS.</h5>  
-                      <p class="mb-2 text-muted"><b>Храмцова Наталья Анатольевна</b> - профессор кафедры терапии ИГМАПО – филиала ФГБОУ ДПО</p>  
-                      <p class="mb-2 text-muted"><b>Кабаков Роман Анатольевич</b> - Кабаков Роман Анатольевич, невролог-эпилептолог Иркутского диагностического центра, к.м.н. (Иркутск)</p>
-                      <a href="https://youtu.be/Eq7_c0uv9yE" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                </div>  
-              </div>  
-       
-              <div class="container" style="margin-top: 20px;">  
-                <div class="row justify-content-center">  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Разработка способа количественного определения невирапина в вещественных доказательствах</h5>  
-                      <p class="mb-2 text-muted"><b>Бендер Татьяна Борисовна</b> - ассистент кафедры нервных болезней ФГБОУ ВО ИГМУ Минздрава</p>  
-                      <a href="https://youtu.be/JWWSAcvb-Qs" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Разработка таблеток с экстрактом душицы</h5>  
-                      <p class="mb-2 text-muted"><b>Смолин Александр Иванович</b> - ассистент кафедры нервных болезней ФГБОУ ВО ИГМУ </p> 
-                      <a href="https://youtu.be/bQu-iBvIl6A" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Разработка настоя манжетки обыкновенной.</h5>  
-                      <p class="mb-2 text-muted"><b>Шнайдер Наталья Алексеевна</b> - д.м.н., проф., НМИЦ ПН им. В.М. Бехтерева, Санкт-Петербург, КрасГМУ им. проф. В.Ф. Войно-Ясенецкого (Красноярск)</p>  
-                      <a href="https://youtu.be/XYqMkkn_7jw" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                </div>  
-              </div>  
-              <div class="container" style="margin-top: 20px;">  
-                <div class="row justify-content-center">  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Установление содержания суммы флавоноидов в надземных органах и по фазам развития бедренца камнеломкового.</h5>  
-                      <p class="mb-2 text-muted"><b>Бендер Татьяна Борисовна</b> - ассистент кафедры нервных болезней ФГБОУ ВО ИГМУ Минздрава</p>  
-                      <a href="https://youtu.be/l21M1F1uAYE" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Применение производных спектров второго порядка для оценки содержания лопинавираиритонавира в таблетках.</h5>  
-                      <p class="mb-2 text-muted"><b>Смолин Александр Иванович</b> - ассистент кафедры нервных болезней ФГБОУ ВО ИГМУ </p> 
-                      <a href="https://youtu.be/74Z6mV28tyY" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Фармакодинамические особенности некоторых препаратов, применяемых при нейропатической боли.</h5>  
-                      <p class="mb-2 text-muted"><b>Шнайдер Наталья Алексеевна</b> - д.м.н., проф., НМИЦ ПН им. В.М. Бехтерева, Санкт-Петербург, КрасГМУ им. проф. В.Ф. Войно-Ясенецкого (Красноярск)</p>  
-                      <a href="https://youtu.be/XYqMkkn_7jw" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                </div>  
-              </div> 
-              <div class="container" style="margin-top: 20px;">  
-                <div class="row justify-content-center">  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Разработка условий спектрофотометрического определения рифабутина в лекарственных формах</h5>  
-                      <p class="mb-2 text-muted"><b>Бендер Татьяна Борисовна</b> - ассистент кафедры нервных болезней ФГБОУ ВО ИГМУ Минздрава</p>  
-                      <a href="https://youtu.be/mrBsYt4GLbQ" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask  text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Калликреин-кининовая система как одна из важнейших протеолитических систем организма.</h5>  
-                      <p class="mb-2 text-muted"><b>Смолин Александр Иванович</b> - ассистент кафедры нервных болезней ФГБОУ ВО ИГМУ </p> 
-                      <a href="https://youtu.be/74Z6mV28tyY" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                  <div class="col-lg-4 col-md-6 text-center">  
-                    <div class="mt-5">  
-                      <i class="fa-4x fas fa-flask text-primary mb-4"></i>  
-                      <h5 class="h5 mb-2">Некоторые особенности этиологии, патогенеза, диагностики рассеянного склероза.</h5>  
-                      <p class="mb-2 text-muted"><b>Шнайдер Наталья Алексеевна</b> - д.м.н., проф., НМИЦ ПН им. В.М. Бехтерева, Санкт-Петербург, КрасГМУ им. проф. В.Ф. Войно-Ясенецкого (Красноярск)</p>  
-                      <a href="https://youtu.be/XYqMkkn_7jw" target="_blank" class="btn btn-primary">Смотреть</a>  
-                    </div>  
-                  </div>  
-                </div>  
-              </div> 
-            </section>  
-       
-            <section class="page-section bg-primary">  
-            <div class="container">  
-            <div class="row justify-content-center">  
-            <div class="col-lg-8 text-center">  
-              <h3 class="text-center text-white mb-2">Lorem ipsum</h3>  
-         
-            </div>  
-            </div>  
-            </div>  
-            </section>  
-            </div>  
-       
-            </body>
+ <body id="page-top">
+   <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-fixed-top py-3" id="mainNav">
+     <div class="container">
+       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+         aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+         <ul class="navbar-nav ml-auto my-2 my-lg-0 ">
+           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Главная</a></li>
+           <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#authors">Организаторы</a></li>
+           <li v-if="nav.firstname==null" class="nav-item"><a class="nav-link js-scroll-trigger"
+               href="#reports">Доклады</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
 
 
-            <footer class="bg-dark py-5">
-                <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <h5 style="color: #fdffff;"> Событие</h5>
-                        <hr style="color: #fdffff;">
-                        <ul class="list-unstyled text-small">
-                            <li><p style="color: #fdffff;">БАЙКАЛЬСКИЕ НЕВРОЛОГИЧЕСКИЕ ВСТРЕЧИ-2021</p></li>
-        
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <h5 style="color: #fdffff;">Ресурсы</h5>
-                        <hr style="color: #fdffff;">
-                        <ul class="list-unstyled text-small">
-                            <li><a style="color: #fdffff;" href="/">Главная</a></li>
-                            <li><a style="color: #fdffff;" target="_blank" href="/files/Neuro.pdf">Программа конференции</a></li>
-                            <li><a style="color: #fdffff;" href="/politic">Политика обработки персональных данных</a></li>
-                            <li><a style="color: #fdffff;" href="/useragreement">Пользовательское соглашение</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6 text-center">
-                        <h5 style="color: #fdffff;">Контакты</h5>
-                        <hr class="color: white;">
-                        <ul class="list-unstyled text-small">
-                            <li><a style="color: #fdffff;" href="https://mir.ismu.baikal.ru">Иркутский государственный медицинский университет</a></li>
-                            <li><a style="color: #fdffff;" href="https://goo.gl/maps/uKw74bXdpqnqG2Tg6"> Адрес: г.Иркутск, ул. Красного Восстания, 1</a></li>
-                            <li><a style="color: #fdffff;" href="mailto:conference@ismu.baikal.ru">E-mail: conference@ismu.baikal.ru</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-        
-            <div class="footer-copyright py-3 text-center">
-                <small style="color: #fdffff;" class="d-block text-center"><a style="color: #fdffff;" href="mailto:kotov.irk@gmail.com">Разработка - Иван Котов и Мартынов Дмитрий</a> &copy; 2021г.</small>
-            </div>
-        
-        
-        
-            </footer>
+
+   <!-- Masthead-->
+   <header class="masthead">
+     <div class="container h-100">
+       <div class="row h-100 align-items-center justify-content-center text-center">
+         <div class="col-lg-10 align-self-end">
+           <h2 class="text-white font-weight-bold">Всероссийская научно-практическая конференция
+             с международным участием</h2>
+           <h1 class="text-uppercase text-white font-weight-bold">«ИННОВАЦИОННЫЕ
+             ТЕХНОЛОГИИ В ФАРМАЦИИ»</h1>
+
+           <h2 class="text-white font-weight-bold">посвященная 80-летию образования фармацевтического
+             факультета ИГМУ</h2>
+           <hr class="divider my-4" />
+         </div>
+         <div class="col-lg-8 align-self-baseline">
+           <p class="text-white-75 font-weight-light mb-5">10 июня 2021 г.</p>
+           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#authors">Организаторы</a>
+         </div>
+       </div>
+     </div>
+   </header>
+   <!-- About-->
+   <section class="page-section bg-primary" id="authors">
+     <div class="container">
+       <div class="row justify-content-center">
+         <div class="col-lg-8 text-center">
+           <h2 class="text-white mt-0"></h2>
+           <h2 class="text-white mt-0">Федеральное государственное бюджетное образовательное учреждение высшего
+             образования «Иркутский государственный медицинский университет» Министерства здравоохранения Российской
+             Федерации</h2>
+           <hr class="divider light my-4" />
+           <a class="btn btn-light btn-xl js-scroll-trigger" href="#reports">Доклады</a>
+         </div>
+       </div>
+     </div>
+   </section>
+
+   <!-- Services-->
+   <section class="page-section" id="reports">
+     <div class="container">
+       <h2 class="text-center mt-0">Программа Всероссийской научно-практической онлайн-конференции с международным
+         участием</h2>
+       <h3 class="text-center mb-2">10 июня 2021 г.</h3>
+       <hr class="divider my-4" />
+       <div class="row justify-content-center">
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask text-primary mb-4"></i>
+             <h5 class="h4 mb-2">Роль Иркутского государственного медицинского университета в подготовке национальных
+               кадров для здравоохранения Монголии и перспективы.</h5>
+             <p class="mb-2 text-muted"><b>Ж. Рэнцэн-Амгалан</b> (Монголия)</p>
+             <a href="https://youtu.be/wTwP0Yts8Vo" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h4 mb-2">Об особенностях формирования реестра ветеринарных лекарственных препаратов в Российской
+               федерации.</h5>
+             <p class="mb-2 text-muted"><b>Бышенко В.В.,Кныш О.И.</b>(г. Тюмень)</p>
+             <a href="https://youtu.be/i-U_Upt9kK4" target="_blank" class="btn btn-primary">Смотреть</a>
+
+
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Определение потенциала фармацевтической помощи населению Новосибирской области.</h5>
+             <p class="mb-2 text-muted"><b>Джупаров А.С., Джупарова И.А.</b>(г. Новосибирск)</p>
+             <a href="https://youtu.be/BvQhB0tEy80" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+       </div>
+       <div class="row justify-content-center">
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h4 mb-2">Оценка физико-химических показателей ротовой жидкости пациентов, переболевших COVID-19.
+             </h5>
+             <p class="mb-2 text-muted"><b>Быков Юрий Николаевич </b>- проректор, заведующий кафедрой нервных болезней
+               ФГБОУ ВО ИГМУ (Иркутск)</p>
+             <a href="https://youtu.be/wTwP0Yts8Vo" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Определение анатомо-диагностических признаков листьев THEA CHINENSIS.</h5>
+             <p class="mb-2 text-muted"><b>Ахметова А.И., Кухарева А.Р., Катаева Н.Н., Саркисян Н.Г. </b>(г.
+               Екатеринбург)</p>
+             <a href="https://youtu.be/Eq7_c0uv9yE" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Разработка способа количественного определения невирапина в вещественных
+               доказательствах</h5>
+             <p class="mb-2 text-muted"><b>Джавадова М.Н., Егорова Е.С. </b> (г. Великий Новгород)</p>
+             <a href="https://youtu.be/JWWSAcvb-Qs" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div class="container" style="margin-top: 20px;">
+       <div class="row justify-content-center">
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Разработка таблеток с экстрактом душицы</h5>
+             <p class="mb-2 text-muted"><b>Жезняковская Л.Ф., Кондратьев В.В. </b>(г. Великий Новгород)</p>
+             <a href="https://youtu.be/bQu-iBvIl6A" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Разработка настоя манжетки обыкновенной.</h5>
+             <p class="mb-2 text-muted"><b>Жезняковская Л.Ф., Карпов А.П.</b> (г.Великий Новгород)</p>
+             <a href="https://youtu.be/XYqMkkn_7jw" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Установление содержания суммы флавоноидов в надземных органах и по фазам развития
+               бедренца камнеломкового.</h5>
+             <p class="mb-2 text-muted"><b>Петухова С.А., Мирович В.М.</b> (г. Иркутск)</p>
+             <a href="https://youtu.be/l21M1F1uAYE" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="container" style="margin-top: 20px;">
+       <div class="row justify-content-center">
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Применение производных спектров второго порядка для оценки содержания лопинавира и
+               ритонавира в таблетках.</h5>
+             <p class="mb-2 text-muted"><b>Илларионова Е.А., Митина А.Э.</b>(г. Иркутск)</p>
+             <a href="https://youtu.be/74Z6mV28tyY" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Фармакодинамические особенности некоторых препаратов, применяемых при нейропатической
+               боли.</h5>
+             <p class="mb-2 text-muted"><b>Клец О.П.</b>(г. Иркутск)</p>
+             <a href="https://youtu.be/XYqMkkn_7jw" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Разработка условий спектрофотометрического определения рифабутина в лекарственных
+               формах</h5>
+             <p class="mb-2 text-muted"><b>Коновалова С.С., Илларионова Е.А.</b>(г. Иркутск)</p>
+             <a href="https://youtu.be/mrBsYt4GLbQ" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="container" style="margin-top: 20px;">
+       <div class="row justify-content-center">
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <i class="fa-4x fas fa-flask  text-primary mb-4"></i>
+             <h5 class="h5 mb-2">Калликреин-кининовая система как одна из важнейших протеолитических систем организма.
+             </h5>
+             <p class="mb-2 text-muted"><b>Егорова И.Э., Бахтаирова В.И., Суслова А.И.</b> (г. Иркутск)</p>
+             <a href="https://youtu.be/74Z6mV28tyY" target="_blank" class="btn btn-primary">Смотреть</a>
+           </div>
+         </div>
+         <div class="col-lg-4 col-md-6 text-center">
+           <div class="mt-5">
+             <div class="mt-5">
+               <i class="fa-4x fas fa-flask text-primary mb-4"></i>
+               <h5 class="h5 mb-2">Некоторые особенности этиологии, патогенеза, диагностики рассеянного склероза.</h5>
+               <p class="mb-2 text-muted"><b>Бахтаирова В.И., Егорова И.Э., Суслова А.И.</b>(г. Иркутск)</p>
+               <a href="https://youtu.be/XYqMkkn_7jw" target="_blank" class="btn btn-primary">Смотреть</a>
+             </div>
+           </div>
+         </div>
+
+       </div>
+     </div>
+   </section>
+
+   <section class="page-section bg-primary">
+     <div class="container">
+       <div class="row justify-content-center">
+         <div class="col-lg-8 text-center">
+           <h3 class="text-center text-white mb-2">Lorem ipsum</h3>
+
+         </div>
+       </div>
+     </div>
+   </section>
+   </div>
+
+ </body>
+
+
+ <footer class="bg-dark py-5">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-4 col-md-6 text-center">
+         <h5 style="color: #fdffff;"> Событие</h5>
+         <hr style="color: #fdffff;">
+         <ul class="list-unstyled text-small">
+           <li>
+             <p style="color: #fdffff;">ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ В ФАРМАЦИИ</p>
+           </li>
+         </ul>
+       </div>
+       <div class="col-lg-4 col-md-6 text-center">
+         <h5 style="color: #fdffff;">Ресурсы</h5>
+         <hr style="color: #fdffff;">
+         <ul class="list-unstyled text-small">
+           <li><a style="color: #fdffff;" href="/">Главная</a></li>
+           <li><a style="color: #fdffff;" target="_blank" href="/files/Programm.pdf">Программа конференции</a></li>
+           <li><a style="color: #fdffff;" href="/politic.html">Политика обработки персональных данных</a></li>
+           <li><a style="color: #fdffff;" href="/useragreement.html">Пользовательское соглашение</a></li>
+         </ul>
+       </div>
+       <div class="col-lg-4 col-md-6 text-center">
+         <h5 style="color: #fdffff;">Контакты</h5>
+         <hr class="color: white;">
+         <ul class="list-unstyled text-small">
+           <li><a style="color: #fdffff;" href="https://mir.ismu.baikal.ru">Иркутский государственный медицинский
+               университет</a></li>
+           <li><a style="color: #fdffff;" href="https://goo.gl/maps/uKw74bXdpqnqG2Tg6"> Адрес: г.Иркутск, ул. Красного
+               Восстания, 1</a></li>
+           <li><a style="color: #fdffff;" href="mailto:conference@ismu.baikal.ru">E-mail: conference@ismu.baikal.ru</a>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+
+   <div class="footer-copyright py-3 text-center">
+     <small style="color: #fdffff;" class="d-block text-center"><a style="color: #fdffff;"
+         href="mailto:kotov.irk@gmail.com">Разработка - Иван Котов и Мартынов Дмитрий</a> &copy; 2021г.</small>
+   </div>
+
+
+
+ </footer>
